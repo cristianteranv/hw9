@@ -1,11 +1,15 @@
 import React from "react"
 import ListItem from "./ListItem"
 
-function List(){
+function List(props){
+    
+    const listItems = props.LIs.map(
+        (text) => <ListItem val={text}/>
+    )
     
     return (
         <ul>
-            <ListItem />
+            {listItems}
         </ul>
     )
 }

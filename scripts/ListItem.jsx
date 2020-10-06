@@ -1,9 +1,8 @@
 import React from 'react'
 
-function ListItem(){
-    
+function ListItem(props){
     return (
-        <li></li>
+        <li>{props.val}</li>
     )
 }
 

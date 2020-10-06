@@ -1,9 +1,9 @@
 import React from "react"
 
-function Button(){
-    
+function Button(props){
+   
     return (
-        <button></button>
+        <button id="myButton" onClick={props.clickHandler}>{props.text}</button>
     )
 }
 

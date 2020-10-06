@@ -1,9 +1,16 @@
 import React from "react"
 
-function Input(){
+function Input(props){
     
+    function onKeyPress (e) {
+    if(e.which === 13) {
+      props.clickHandler()
+    }
+  }
+    
+  
     return (
-        <input/>
+        <input id="input" type="text" onKeyPress={onKeyPress}/>
     )
 }
 
