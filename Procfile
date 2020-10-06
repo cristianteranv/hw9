@@ -1,1 +1,1 @@
-web: python user_tweets.py
+web: python app.py
